@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Comic AI Generator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🎨 Comic AI</h1>
+    <p>Turn your imagination into amazing comics</p>
+</header>
+
+<main class="container">
+
+    <section class="card">
+        <h2>Create Your Comic</h2>
+
+        <label>Story Idea</label>
+
+        <textarea id="idea"
+            placeholder="Example: A young hero discovers a magical robot in his school..."></textarea>
+
+        <button onclick="generateComic()">
+            ✨ Generate Comic
+        </button>
+    </section>
+
+    <section class="card result-card">
+        <h2>📖 Generated Comic</h2>
+
+        <div id="loading">
+            Your comic will appear here...
+        </div>
+
+        <div id="result"></div>
+    </section>
+
+</main>
+
+<footer>
+    <p>Comic AI | AI Powered Comic Generator</p>
+</footer>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
